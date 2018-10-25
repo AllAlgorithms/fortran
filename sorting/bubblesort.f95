@@ -1,7 +1,7 @@
 program testbubblesort
         integer lst(10)
         lst = (/ 10, 9, 8, 4, 5, 6, 7, 3, 2, 1 /)
-        call bubblesort(lst, 0, 10)
+        call bubblesort(lst, 1, 10)
         call show(lst)
 end program testbubblesort
 
@@ -13,12 +13,12 @@ subroutine bubblesort(lst, a, b)
         integer y
         integer tmp
         do x = a, b-1
-            do y = a, b-x-1
+            do y = a, b-x
                 if (lst(y) .gt. lst(y+1)) then
                     tmp = lst(y)
                     lst(y) = lst(y+1)
                     lst(y+1) = tmp
-                endif
+                end if
             end do
         end do
 end
