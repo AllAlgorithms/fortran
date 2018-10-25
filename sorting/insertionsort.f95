@@ -1,7 +1,7 @@
 program testinsertionsort
         integer lst(10)
         lst = (/ 10, 9, 8, 4, 5, 6, 7, 3, 2, 1 /)
-        call insertionsort(lst, 0, 10)
+        call insertionsort(lst, 1, 10)
         call show(lst)
 end program testinsertionsort
 
