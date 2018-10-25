@@ -18,7 +18,7 @@ subroutine bubblesort(lst, a, b)
                     tmp = lst(y)
                     lst(y) = lst(y+1)
                     lst(y+1) = tmp
-                endif
+                end if
             end do
         end do
 end
